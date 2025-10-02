@@ -1,5 +1,6 @@
 import styles from "../assets/styles/pages/homePage.module.scss";
 import welcome_image from "../assets/images/welcome_image.svg";
+import Button from "../components/button";
 
 export default function HomePage() {
 	return (
@@ -11,8 +12,8 @@ export default function HomePage() {
 				<img src={welcome_image} alt="welcome image" />
 			</aside>
 			<nav>
-				<button>create new employee</button>
-				<button>consult the employees</button>
+				<Button path="/addEmploye" text="create new employee" />
+				<Button path="/listEmploye" text="consult the employees" />
 			</nav>
 			<main>
 				<section>
