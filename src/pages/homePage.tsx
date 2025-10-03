@@ -8,8 +8,10 @@ export default function HomePage() {
 			<header>
 				<h1>HRnet.</h1>
 			</header>
-			<nav>
+			<aside>
 				<img src={welcome_image} alt="welcome image" />
+			</aside>
+			<nav>
 				<Button path="/addEmploye" text="create new employee" />
 				<Button path="/listEmploye" text="consult the employees" />
 			</nav>

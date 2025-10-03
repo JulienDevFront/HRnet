@@ -4,6 +4,7 @@
 @use "../utils/utils_colors" as colors;
 
 .button {
+	display: inline-block;
 	width: 100%;
 	padding: 1rem 0px;
 	border-radius: 4px;
