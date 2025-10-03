@@ -17,7 +17,7 @@
 
 	aside img {
 		position: relative;
-		top: 0.25rem;
+		top: 0.75rem;
 	}
 
 	nav {
@@ -26,6 +26,7 @@
 		flex-direction: column;
 		gap: 1rem;
 		padding: 0px 4rem;
+		z-index: 1111;
 	}
 
 	main {
