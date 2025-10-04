@@ -6,7 +6,7 @@ import Footer from "../layouts/footer";
 export default function HomePage() {
 	return (
 		<div>
-			<Header to="/" showClose={false} />
+			<Header to="/" />
 			<aside>
 				<img src={welcome_image} alt="welcome image" />
 			</aside>

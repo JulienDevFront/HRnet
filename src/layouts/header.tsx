@@ -1,14 +1,20 @@
-import close_icon from "../assets/close_icon.svg";
+import closeIcon from "../assets/close_icon.svg";
 import { Link } from "react-router";
 
 type HeaderProps = {
 	to: string;
-	showClose: boolean;
+	showClose?: boolean;
 };
 
+/**
+ * The component displays the main header with a link `to` the home page with a optional possibility `showClose` for display a button to close the modal
+ * - - -
+ * @param to type `string`
+ * @param showClose type `bool` default type is `false`
+ */
 export default function Header({ to, showClose = false }: HeaderProps) {
 	return (
-		<header>
+		<header className={styles.header}>
 			<h1>
 				<Link to={to} aria-label="Click for back home">
 					HRnet
@@ -16,10 +22,15 @@ export default function Header({ to, showClose = false }: HeaderProps) {
 			</h1>
 
 			{showClose && (
-				<Link to={to} aria-label="Click for close modal">
-					<img src={close_icon} alt="Close modal" />
+				<Link to={to} className={styles.showClose} aria-label="Click for close modal">
+					<img src={closeIcon} alt="Close modal" />
 				</Link>
 			)}
 		</header>
 	);
 }
+
+const styles = {
+	header: "flex justify-between font-bold text-xl",
+	showClose: "rounded-sm border-2 border-solid size-sm hover:bg-blue-400",
+};
