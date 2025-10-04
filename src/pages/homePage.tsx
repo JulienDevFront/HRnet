@@ -2,6 +2,7 @@ import styles from "../assets/styles/pages/homePage.module.scss";
 import welcome_image from "../assets/images/welcome_image.svg";
 import Button from "../components/button";
 import Header from "../layouts/header";
+import Footer from "../layouts/footer";
 
 export default function HomePage() {
 	return (
@@ -27,7 +28,7 @@ export default function HomePage() {
 					dolore magna aliqua.
 				</section>
 			</main>
-			<footer>copyright @2025 HRnet author Julien Genty</footer>
+			<Footer />
 		</div>
 	);
 }
