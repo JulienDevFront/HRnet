@@ -1,5 +1,5 @@
 import Header from "../layouts/header";
-import consult_employee from "../assets/images/consult_employee_image.svg";
+import consult_employee from "../assets/consult_employee_image.svg";
 
 export default function ListEmployePage() {
 	return (

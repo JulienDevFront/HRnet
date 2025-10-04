@@ -1,12 +1,11 @@
-import add_employee from "../assets/images/add_employee_image.svg";
-import styles from "../assets/styles/pages/addEmployePage.module.scss";
+import add_employee from "../assets/add_employee_image.svg";
 import Input from "../components/input";
 import Header from "../layouts/header";
 import Footer from "../layouts/footer";
 
 export default function AddEmployePage() {
 	return (
-		<div className={styles.addEmployePage}>
+		<div>
 			<Header to="/" showClose={true} />
 			<aside>
 				<img src={add_employee} alt="Illustration" />
