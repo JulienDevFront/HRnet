@@ -5,10 +5,10 @@ import Footer from "./footer";
  *
  */
 export default function Root() {
-	return (
-		<div className="p-16">
-			<Outlet />
-            <Footer />
-		</div>
-	);
+  return (
+    <div className="flex min-h-dvh justify-center p-16">
+      <Outlet />
+      <Footer />
+    </div>
+  );
 }
