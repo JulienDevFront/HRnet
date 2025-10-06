@@ -6,23 +6,23 @@ import AddEmployePage from "./pages/addEmployePage.tsx";
 import { createBrowserRouter } from "react-router";
 
 export const routes = createBrowserRouter([
-	{
-		path: "/",
-		Component: Root,
-		ErrorBoundary: ErrorPage,
-		children: [
-			{
-				index: true,
-				Component: HomePage,
-			},
-			{
-				path: "/listEmploye",
-				Component: ListEmployeePage,
-			},
-			{
-				path: "/addEmploye",
-				Component: AddEmployePage,
-			},
-		],
-	},
+  {
+    path: "/",
+    Component: Root,
+    ErrorBoundary: ErrorPage,
+    children: [
+      {
+        index: true,
+        Component: HomePage,
+      },
+      {
+        path: "/listEmploye",
+        Component: ListEmployeePage,
+      },
+      {
+        path: "/addEmploye",
+        Component: AddEmployePage,
+      },
+    ],
+  },
 ]);

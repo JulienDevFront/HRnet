@@ -53,10 +53,10 @@ export default function TrEmployee(props: TrEmployeeProps) {
 }
 
 const styles = {
-  td: "bg-neutral-50 p-3 text-left border-neutral-200 border-t-8 border-r-8 border-l-8",
+  td: "bg-neutral-50 p-3 text-left border-neutral-200 border-t-2 border-r-2 border-l-2",
   td_container: "truncate",
   td_left:
-    "bg-neutral-50 p-3 text-left border-neutral-200 border-t-8 border-r-8",
+    "bg-neutral-50 p-3 text-left border-neutral-200 border-t-2 border-r-2",
   td_right:
-    "bg-neutral-50 p-3 text-left border-neutral-200 border-t-8 border-l-8",
+    "bg-neutral-50 p-3 text-left border-neutral-200 border-t-2 border-l-2",
 };
