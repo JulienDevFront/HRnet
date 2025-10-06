@@ -1,6 +1,7 @@
-import welcomeImage from "../assets/welcome_image.svg";
+import image from "../assets/welcome_image.svg";
 import Button from "../components/button";
 import Header from "../layouts/header";
+import HeroHeader from "../layouts/heroHeader";
 
 /**
  * This component return `HomePage`, a page of `HRnet`
@@ -9,9 +10,7 @@ export default function HomePage() {
   return (
     <div className={styles.homePage}>
       <Header to="/" />
-      <aside className={styles.aside}>
-        <img src={welcomeImage} alt="welcome image" />
-      </aside>
+      <HeroHeader img={image} alt="illustration" />
       <nav className={styles.nav}>
         <Button path="/addEmploye" text="create new employee" />
         <Button path="/listEmploye" text="consult the employees" />
