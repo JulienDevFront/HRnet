@@ -1,6 +1,7 @@
-import add_employee from "../assets/add_employee_image.svg";
+import image from "../assets/add_employee_image.svg";
 import Input from "../components/input";
 import Header from "../layouts/header";
+import HeroHeader from "../layouts/heroHeader";
 
 /**
  * This component return `AddEmployePage`, a page of `HRnet`
@@ -9,9 +10,7 @@ export default function AddEmployePage() {
   return (
     <div className={styles.AddEmployePage}>
       <Header to="/" showClose={true} />
-      <aside>
-        <img className={styles.img} src={add_employee} alt="Illustration" />
-      </aside>
+      <HeroHeader img={image} alt="illustration" />
       <form className={styles.form}>
         <Input label="name" type="text" placeholder="Harry" />
         <Input label="last name" type="text" placeholder="Potter" />
