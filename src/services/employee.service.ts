@@ -14,12 +14,26 @@ export type $EMPLOYEE = {
   zipCode: string;
 };
 
+export const EMPLOYEE: $EMPLOYEE = {
+  id: "",
+  name: "",
+  lastName: "",
+  email: "",
+  birthDate: "",
+  startDate: "",
+  street: "",
+  city: "",
+  country: "",
+  department: "",
+  zipCode: "",
+};
+
 /**
  * This function return the `model of data of an employee`
  * - - -
  * @param `...employee` type `Object`
  */
-export function EMPLOYEE({ ...props }): $EMPLOYEE {
+export function formatEMPLOYEE({ ...props }): $EMPLOYEE {
   return {
     id: crypto.randomUUID(),
     name: props.name,
