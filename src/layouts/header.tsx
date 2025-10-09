@@ -22,11 +22,7 @@ export default function Header({ to, showClose = false }: HeaderProps) {
       </h1>
 
       {showClose && (
-        <Link
-          to={to}
-          className={styles.showClose}
-          aria-label="Click for close modal"
-        >
+        <Link to={to} className={styles.showClose} aria-label="Click for close modal">
           <img src={closeIcon} alt="Close modal" />
         </Link>
       )}
@@ -35,6 +31,6 @@ export default function Header({ to, showClose = false }: HeaderProps) {
 }
 
 const styles = {
-  header: "flex self-start justify-between font-bold text-xl",
-  showClose: "rounded-sm border-2 border-solid size-sm hover:bg-blue-400",
+  header: "mt-8 flex justify-between self-start text-xl font-bold",
+  showClose: "size-sm rounded-sm border-2 border-solid hover:bg-blue-400",
 };
