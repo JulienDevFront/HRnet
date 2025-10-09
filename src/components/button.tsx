@@ -21,5 +21,5 @@ export default function Button({ path, text }: ButtonProps) {
 
 const styles = {
   button:
-    "block p-4 bg-neutral-800 border-2 border-neutral-800 text-center  text-neutral-300 rounded-sm hover:bg-neutral-300 hover:text-neutral-800 transition-all duration-100 ease-in-out font-bold mb-4",
+    "mb-4 block rounded-sm border-2 border-neutral-800 bg-neutral-800 p-4 text-center font-bold text-neutral-300 transition-all duration-100 ease-in-out hover:bg-blue-400 hover:text-neutral-800 max-md:text-xs md:text-sm lg:text-base",
 };
