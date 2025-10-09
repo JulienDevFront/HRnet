@@ -32,7 +32,7 @@ export default function HomePage() {
 
 const styles = {
   homePage: "flex max-w-5xl flex-1 flex-col items-center justify-center",
-  nav: "w-full",
+  nav: "w-full md:w-1/2 lg:w-1/2",
   main: "mt-8 pb-8",
   h2: "text-right leading-8 font-bold max-md:text-xs md:text-sm lg:text-base",
   p: "text-justify leading-8 max-md:text-xs md:text-sm lg:text-base",
