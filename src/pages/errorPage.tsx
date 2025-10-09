@@ -20,9 +20,8 @@ export default function ErrorBoundary() {
           </header>
           <footer className={styles.footer}>
             {error.data}
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Sunt in
-            culpa qui officia{" "}
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sunt in culpa qui
+            officia{" "}
             <Link to="/" className={styles.link}>
               deserunt mollit anim id est laborum.
             </Link>
@@ -41,9 +40,8 @@ export default function ErrorBoundary() {
           </header>
           <footer className={styles.footer}>
             {error.stack}
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Sunt in
-            culpa qui officia{" "}
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sunt in culpa qui
+            officia{" "}
             <Link to="/" className={styles.link}>
               deserunt mollit anim id est laborum.
             </Link>
@@ -61,9 +59,8 @@ export default function ErrorBoundary() {
             <h2 className={styles.h2}>form not found</h2>
           </header>
           <footer className={styles.footer}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Sunt in
-            culpa qui officia{" "}
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sunt in culpa qui
+            officia{" "}
             <Link to="/" className={styles.link}>
               deserunt mollit anim id est laborum.
             </Link>
@@ -75,11 +72,10 @@ export default function ErrorBoundary() {
 }
 
 const styles = {
-  ErrorBoundary:
-    "flex min-h-dvh flex-col justify-center items-center bg-neutral-200 p-16",
+  ErrorBoundary: "flex min-h-dvh flex-col justify-center items-center bg-neutral-200 p-16",
   container: "max-w-3xl",
   h1: "text-center text-8xl font-bold",
-  h2: "font-bold mt-4",
-  footer: "text-justify",
-  link: "font-bold underline",
+  h2: "font-bold mt-4 max-md:text-sm",
+  footer: "text-justify max-md:text-xs md:text-sm lg:text-base",
+  link: "font-bold underline max-md:text-xs md:text-sm lg:text-base",
 };
