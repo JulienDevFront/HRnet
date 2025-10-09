@@ -12,7 +12,7 @@ type HeroHeaderProps = {
 export default function HeroHeader({ img, alt }: HeroHeaderProps) {
   return (
     <aside>
-      <img src={img} alt={alt} className={styles.img} />
+      <img src={img} alt={alt} className={styles.img} width="384" height="384" fetchPriority="high" decoding="async" />
     </aside>
   );
 }
