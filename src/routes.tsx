@@ -2,9 +2,16 @@ import Root from "./layouts/root.tsx";
 import HomePage from "./pages/homePage.tsx";
 import ErrorPage from "./pages/errorPage.tsx";
 import ListEmployeePage from "./pages/listEmployeePage.tsx";
-import AddEmployePage from "./pages/addEmployePage.tsx";
+import AddEmployeePage from "./pages/addEmployeePage.tsx";
 import { createBrowserRouter } from "react-router";
 
+/**
+ * This function return the `routes` of the app
+ * - - -
+ * @path `/`
+ * @path `/listEmployee`
+ * @path `/addEmployee`
+ */
 export const routes = createBrowserRouter([
   {
     path: "/",
@@ -16,12 +23,12 @@ export const routes = createBrowserRouter([
         Component: HomePage,
       },
       {
-        path: "/listEmploye",
+        path: "/listEmployee",
         Component: ListEmployeePage,
       },
       {
-        path: "/addEmploye",
-        Component: AddEmployePage,
+        path: "/addEmployee",
+        Component: AddEmployeePage,
       },
     ],
   },
