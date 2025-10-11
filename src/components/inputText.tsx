@@ -1,24 +1,23 @@
-type InputProps = {
+type InputTextProps = {
   label: string;
-  type: string;
   name: string;
   placeholder?: string;
   onChange: React.ChangeEventHandler<HTMLInputElement>;
 };
 
 /**
- * this component displays a input of `type` personalized with a `placeholder` and a `label`
+ * this component displays a input of `text type` personalized with a `placeholder` and a `label`
  * - - -
  * @param label type `string`
- * @param type type `string`
+ * @param name type `string`
  * @param placeholder type `string`
  * @param onChange type `event`
  */
-export default function Input({ label, type, name, placeholder, onChange }: InputProps) {
+export default function InputText({ label, name, placeholder, onChange }: InputTextProps) {
   return (
     <label className={styles.label}>
       <span className={styles.span}>{label}</span>
-      <input type={type} name={name} placeholder={placeholder} required className={styles.input} onChange={onChange} />
+      <input type="text" name={name} placeholder={placeholder} required className={styles.input} onChange={onChange} />
     </label>
   );
 }
